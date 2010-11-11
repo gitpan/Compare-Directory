@@ -1,0 +1,28 @@
+---
+abstract: 'A very simple utility to compare directory.'
+author:
+  - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
+build_requires:
+  CAM::PDF: 1.52
+  File::Compare: 0
+  Module::Build: 0.36
+  Readonly: 0
+  Test::Deep: 0
+  Test::Excel: 1.01
+  Test::More: 0
+  XML::SemanticDiff: 1
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Compare-Directory
+provides:
+  Compare::Directory:
+    file: lib/Compare/Directory.pm
+    version: 0.01
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01

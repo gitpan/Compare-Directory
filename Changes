@@ -1,5 +1,8 @@
 Revision history for Compare-Directory
 
+0.03    Mon Nov 15 13:14:15 2010
+        - Updated Build.PL and Makefile.PL to have Test::Excel v1.04.
+
 0.02    Mon Nov 15 10:08:22 2010
         Renamed method cmp() to cmp_directory() as it was conflicting with File::Compare.
 

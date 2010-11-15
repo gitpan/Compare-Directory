@@ -8,11 +8,11 @@ Compare::Directory - A very simple utility to compare directory.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Carp;
 use CAM::PDF;
@@ -107,7 +107,7 @@ sub new
     
 =head1 METHODS
 
-=head2 cmp()
+=head2 cmp_directory()
 
 This is the public that initiates the actual directory comparison. You simply call 
 this method against the object. Returns 1 if directory comparison succeed otherwise
@@ -117,11 +117,11 @@ returns 0.
    use Compare::Directory;
    
    my $directory = Compare::Directory("./got-1", "./exp-1");
-   $directory->cmp();
+   $directory->cmp_directory();
    
 =cut
 
-sub cmp
+sub cmp_directory
 {
     my $self = shift;
     foreach my $entry (keys %{$self->{entry}})
@@ -140,7 +140,7 @@ sub cmp
         }
         else
         {
-            $self->{report}->($f1, $f2) unless _cmp($f1, $f2);
+            $self->{report}->($f1, $f2) unless _cmp_directory($f1, $f2);
             # Very strict about the order of elements in XML.
             # $self->{report}->($f1, $f2) if File::Compare::compare($f1, $f2);
         }
@@ -148,14 +148,14 @@ sub cmp
     return $self->{_status};
 }
 
-=head2 _cmp($$)
+=head2 _cmp_directory($$)
 
 This is an internal method where the actual comparison happens. This gets called
-by the method cmp().
+by the method cmp_directory().
 
 =cut
 
-sub _cmp($$)
+sub _cmp_directory($$)
 {
     my $file1 = shift;
     my $file2 = shift;
@@ -236,6 +236,16 @@ Please report any bugs or feature requests to C<bug-compare-directory at rt.cpan
 or through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Compare-Directory>.  
 I will be notified, and then you'll automatically be notified of progress on your bug 
 as I make changes.
+
+=head1 SEE ALSO
+
+=over 2
+
+=item File::DirCompare
+
+=item File::Dircmp_directory
+
+=back
 
 =head1 SUPPORT
 

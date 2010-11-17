@@ -10,7 +10,7 @@ WriteMakefile
                            'Module::Build' => '0.36',
                            'Readonly' => '0',
                            'Test::Deep' => '0',
-                           'Test::Excel' => '1.05',
+                           'Test::Excel' => '1.06',
                            'Test::More' => '0',
                            'XML::SemanticDiff' => '1'
                          },

@@ -1,8 +1,10 @@
 Revision history for Compare-Directory
 
+0.05    Wed Nov 17 13:57:23 2010
+        - Updated Build.PL and Makefile.PL to have Test::Excel v1.06.
+
 0.04    Mon Nov 15 20:21:11 2010
         - Updated Build.PL and Makefile.PL to have Test::Excel v1.05.
-        Got to find easier way to automate this.
 
 0.03    Mon Nov 15 13:14:15 2010
         - Updated Build.PL and Makefile.PL to have Test::Excel v1.04.

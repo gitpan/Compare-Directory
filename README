@@ -21,6 +21,20 @@ To install this module, run the following commands:
 	make test
 	make install
 
+or (on windows platform)
+
+	perl Build.PL
+	Build
+	Build test
+	Build install
+
+or (on non-windows platform)
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+	
 SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the

@@ -8,11 +8,11 @@ Compare::Directory - A very simple utility to compare directory.
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 use Carp;
 use CAM::PDF;
@@ -148,13 +148,6 @@ sub cmp_directory
     return $self->{_status};
 }
 
-=head2 _cmp_directory($$)
-
-This is an internal method where the actual comparison happens. This gets called
-by the method cmp_directory().
-
-=cut
-
 sub _cmp_directory($$)
 {
     my $file1 = shift;
@@ -182,13 +175,6 @@ sub _cmp_directory($$)
     }
     return $do_FILEs_match;
 }
-
-=head2 _cmp_pdf()
-
-This is an internal method for PDF comparison. Code borrowed from Test::PDF.
-[http://search.cpan.org/~stevan/Test-PDF-0.01/lib/Test/PDF.pm]
-
-=cut
 
 sub _cmp_pdf($$) 
 {

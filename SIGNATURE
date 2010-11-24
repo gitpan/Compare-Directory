@@ -1,0 +1,50 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 a9b27f08da9f95523ce7fd5660b38c7b5b083880 Build.PL
+SHA1 f52e7072bfe16821936354f4c280d4028ee4276a Changes
+SHA1 aa0965bf8236a1957d27040c3e3134a893b5bb79 MANIFEST
+SHA1 ba6d3bedc41fa8916a4ebca27c1b8a53f1c6eef3 MANIFEST.SKIP
+SHA1 7bf86e4cc646dab09983226dae53afd3be7c3e3b META.yml
+SHA1 037b0a5f2dfa1b5121e9ea8aa7169542e97c28e8 Makefile.PL
+SHA1 57437afcbba815eb9b21232a7be5ed9e408484a6 README
+SHA1 5e123d619e6dd1476f7fb009c8f7016f78cf3af4 lib/Compare/Directory.pm
+SHA1 b20959e49b1b1e3f9ac7be70f876ba97ca941667 t/00-load.t
+SHA1 c6405894a67ba7117393f31e63103eefd5da97e0 t/00-signature.t
+SHA1 b8e74cc0d50022d9fa974c6aea88dcb20245649e t/exp-1/CSV.csv
+SHA1 af36c69488895bfe6c347ebd2ea26409c3d1e4ce t/exp-1/PDF.pdf
+SHA1 12f4ecc548413db154b0bc932ee0ca35c20a5c99 t/exp-1/TXT.txt
+SHA1 026840e6cf7fd0ccb5b4a2283447d743614c00ca t/exp-1/XLS.xls
+SHA1 1056adce20e2716c73b5884d49bf64bbbe61d340 t/exp-1/XML.xml
+SHA1 b8e74cc0d50022d9fa974c6aea88dcb20245649e t/got-1/CSV.csv
+SHA1 6f505b1bef3bc8af893e1ff5f04e409cdcf03f53 t/got-1/PDF.pdf
+SHA1 12f4ecc548413db154b0bc932ee0ca35c20a5c99 t/got-1/TXT.txt
+SHA1 e931522e611e87aec546c726eb3db6b4e9b28d58 t/got-1/XLS.xls
+SHA1 1056adce20e2716c73b5884d49bf64bbbe61d340 t/got-1/XML.xml
+SHA1 7fbb03f5e72028255b051592798f56dbc92e3090 t/manifest.t
+SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
+SHA1 5de0485e1b7830911a12d480f2c13588e89500e2 t/unit-test-01.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.14 (MingW32)
+
+iQEcBAEBAgAGBQJM7NzGAAoJEPYcXBXhRYOhsxIH/AwTTfBkWfdWDKejvEdKk52G
+I9+WKVgAFdqPh/D5IB23TQcAOF5hpvmIBb9JF++ETOq45lPsEVNNa+73y0bavTfc
+TyWb4xuwqunNGCBFQYtiW83opGiXNBuM8IJ8eN9e1WmVKSRa+3SMdroMTiWWC1nX
+jpZzVtbq3+DNuehP1jUB5adahOBnvMKFSM0bawB4TXcB5Zbibkkg2juvrS3ZuFoD
+QbZie0zKylUjb6sKgTQYGWwUDvooynchpCstw8K0t2QKZ+PuK53zJy83Og+Ov05d
+neK4WEKWkxNm8prscEu3brQLCiyofa8aAzB8MnmsMdBFbQr3caA+hmFj+mQ3uBk=
+=gA5V
+-----END PGP SIGNATURE-----

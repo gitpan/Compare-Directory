@@ -8,11 +8,11 @@ Compare::Directory - A very simple utility to compare directory.
 
 =head1 VERSION
 
-Version 0.07
+Version 0.08
 
 =cut
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 use Carp;
 use CAM::PDF;
@@ -53,7 +53,7 @@ The constructor expects the two directories name with complete path.
    use Compare::Directory;
    
    my $directory = Compare::Directory("./got-1", "./exp-1");
-   
+
 =cut
 
 sub new

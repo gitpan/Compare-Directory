@@ -1,5 +1,8 @@
 Revision history for Compare-Directory
 
+0.07    Mon Feb 07 17:31:29 2011
+        - Corrected the pod about "SEE ALSO" where module name was incorrect.
+
 0.06    Wed Nov 24 09:30:12 2010
         - Added SIGNATURE to the distribution.
         - Added unit test for SIGNATURE.

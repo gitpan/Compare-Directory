@@ -8,11 +8,11 @@ Compare::Directory - A very simple utility to compare directory.
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use Carp;
 use CAM::PDF;
@@ -229,7 +229,7 @@ as I make changes.
 
 =item File::DirCompare
 
-=item File::Dircmp_directory
+=item File::Dircmp
 
 =back
 

@@ -1,5 +1,8 @@
 Revision history for Compare-Directory
 
+0.09    Mon Feb 28 11:46:10 2011
+        - Added DISCLAIMER section to the pod.
+
 0.08    Mon Feb 07 17:42:20 2011
         - Fixed the pod for CONSTRUCTOR as it was generating incorrect html on install.
         - Added MYMETA.json to MANIFEST.SKIP.

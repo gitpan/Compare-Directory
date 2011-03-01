@@ -1,5 +1,9 @@
 Revision history for Compare-Directory
 
+1.10    Tue Mar 01 14:43:35 2011
+        - Minor changes to the pod in the types of file format supported.
+        - Removed ACKNOWLEDGEMENTS title from the pod.
+
 0.09    Mon Feb 28 11:46:10 2011
         - Added DISCLAIMER section to the pod.
 

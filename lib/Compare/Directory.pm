@@ -8,11 +8,11 @@ Compare::Directory - A very simple utility to compare directory.
 
 =head1 VERSION
 
-Version 0.09
+Version 1.10
 
 =cut
 
-our $VERSION = '0.09';
+our $VERSION = '1.10';
 
 use Carp;
 use CAM::PDF;
@@ -31,17 +31,17 @@ use File::Glob qw(bsd_glob);
 The one and only objective of this module is compare two directory contents.
 Currently it can only compare the following file types:
 
-=over 5
+=over 4
 
-=item .txt: Text File
+=item * Text File (.txt)
 
-=item .csv: Comma Seperated File
+=item * Comma Seperated File (.csv)
 
-=item .pdf: PDF File
+=item * PDF File (.pdf)
 
-=item .xml: XML File
+=item * XML File (.xml)
 
-=item .xls: Excel File
+=item * Excel File (.xls)
 
 =back
 
@@ -260,8 +260,6 @@ L<http://cpanratings.perl.org/d/Compare-Directory>
 L<http://search.cpan.org/dist/Compare-Directory/>
 
 =back
-
-=head1 ACKNOWLEDGEMENTS
 
 =head1 LICENSE AND COPYRIGHT
 

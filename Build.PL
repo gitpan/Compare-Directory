@@ -1,14 +1,14 @@
-use strict;
-use warnings;
+use strict;use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
-    sign                => 1,
-    module_name         => 'Compare::Directory',
-    license             => 'perl',
-    dist_author         => q{Mohammad S Anwar <mohammad.anwar@yahoo.com>},
-    dist_version_from   => 'lib/Compare/Directory.pm',
-    build_requires => {
+    sign              => 1,
+    module_name       => 'Compare::Directory',
+    license           => 'perl',
+    dist_author       => q{Mohammad S Anwar <mohammad.anwar@yahoo.com>},
+    dist_version_from => 'lib/Compare/Directory.pm',
+    add_to_cleanup    => [ 'Compare-Directory-*' ],	
+    build_requires    => {
         'Test::More'        => 0,
         'Test::Deep'        => 0,
         'Readonly'          => 0,
@@ -18,8 +18,6 @@ my $builder = Module::Build->new(
         'File::Compare'     => 0,
         'XML::SemanticDiff' => 1.0
     },
-    add_to_cleanup      => [ 'Compare-Directory-*' ],
-    create_makefile_pl  => 'traditional',
 );
 
 $builder->create_build_script();

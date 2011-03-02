@@ -22,7 +22,7 @@ name: Compare-Directory
 provides:
   Compare::Directory:
     file: lib/Compare/Directory.pm
-    version: 1.10
+    version: 1.11
 resources:
   license: http://dev.perl.org/licenses/
-version: 1.10
+version: 1.11

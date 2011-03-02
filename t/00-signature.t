@@ -1,6 +1,6 @@
-﻿#!/usr/bin/perl
+﻿#!perl
 
-use strict;
+use strict;use warnings;
 print "1..1\n";
 
 if (!$ENV{TEST_SIGNATURE}) {

@@ -1,5 +1,12 @@
 Revision history for Compare-Directory
 
+1.11    Wed Mar 02 11:16:45 2011
+        - Updated Build.PL to remove the creation of Makefile.PL on the fly.
+        - Added 'clean' key to Makefile.PL.
+        - Removed "-T" from the first line of 00-load.t, pod.t, manifest.t,
+          00-signature.t and unit-test-01.t. It appears to me that Mac OS X 
+          doesn't like it, for some reason.
+
 1.10    Tue Mar 01 14:43:35 2011
         - Minor changes to the pod in the types of file format supported.
         - Removed ACKNOWLEDGEMENTS title from the pod.

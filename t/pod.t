@@ -1,7 +1,6 @@
-#!perl -T
+#!perl
 
-use strict;
-use warnings;
+use strict;use warnings;
 use Test::More;
 
 # Ensure a recent version of Test::Pod

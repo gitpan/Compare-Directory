@@ -1,5 +1,8 @@
 Revision history for Compare-Directory
 
+1.12    Wed Mar 09 19:04:22 2011
+        - Changed the description of the module slightly.
+
 1.11    Wed Mar 02 11:16:45 2011
         - Updated Build.PL to remove the creation of Makefile.PL on the fly.
         - Added 'clean' key to Makefile.PL.

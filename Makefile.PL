@@ -4,7 +4,7 @@ WriteMakefile
 (
     'NAME'         => 'Compare::Directory',
     'VERSION_FROM' => 'lib/Compare/Directory.pm',
-	'clean'        => { FILES => 'Compare-Directory-*' },
+    'clean'        => { FILES => 'Compare-Directory-*' },
     'PREREQ_PM'    => {
         'CAM::PDF'          => '1.52',
         'File::Compare'     => '0',

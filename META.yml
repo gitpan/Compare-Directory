@@ -1,5 +1,5 @@
 ---
-abstract: 'A very simple utility to compare directory.'
+abstract: 'Interface to compare directories.'
 author:
   - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
 build_requires:
@@ -22,7 +22,7 @@ name: Compare-Directory
 provides:
   Compare::Directory:
     file: lib/Compare/Directory.pm
-    version: 1.11
+    version: 1.12
 resources:
   license: http://dev.perl.org/licenses/
-version: 1.11
+version: 1.12

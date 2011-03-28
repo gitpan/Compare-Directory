@@ -8,11 +8,11 @@ Compare::Directory - Interface to compare directories.
 
 =head1 VERSION
 
-Version 1.12
+Version 1.13
 
 =cut
 
-our $VERSION = '1.12';
+our $VERSION = '1.13';
 
 use Carp;
 use CAM::PDF;
@@ -263,7 +263,7 @@ L<http://search.cpan.org/dist/Compare-Directory/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2010 Mohammad S Anwar.
+Copyright 2010-2011 Mohammad S Anwar.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published

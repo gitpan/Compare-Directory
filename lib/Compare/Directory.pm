@@ -8,11 +8,11 @@ Compare::Directory - Interface to compare directories.
 
 =head1 VERSION
 
-Version 1.13
+Version 1.14
 
 =cut
 
-our $VERSION = '1.13';
+our $VERSION = '1.14';
 
 use Carp;
 use CAM::PDF;
@@ -26,24 +26,20 @@ use Scalar::Util 'blessed';
 use File::Spec::Functions;
 use File::Glob qw(bsd_glob);
 
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
-The one and only objective of this module is compare two directory contents.
-Currently it can only compare the following file types:
+The one & only objective of the module is compare two directory contents. Currently it compare
+the following file types:
 
-=over 4
-
-=item * Text File (.txt)
-
-=item * Comma Seperated File (.csv)
-
-=item * PDF File (.pdf)
-
-=item * XML File (.xml)
-
-=item * Excel File (.xls)
-
-=back
+    +-----------------------------------+
+    | File Type            | Extension  |
+    +-----------------------------------+
+    | TEXT File            |   .txt     |
+    | COMMA Seperated File |   .csv     | 
+    | PDF File             |   .pdf     | 
+    | XML File             |   .xml     |
+    | EXCEL File           |   .xls     |
+    +-----------------------------------+
 
 =head1 CONSTRUCTOR
 
@@ -104,21 +100,20 @@ sub new
     bless $self, $class;
     return $self;
 }    
-    
-=head1 METHODS
+
+=head1 METHOD
 
 =head2 cmp_directory()
 
-This is the public that initiates the actual directory comparison. You simply call 
-this method against the object. Returns 1 if directory comparison succeed otherwise
-returns 0.
+This is the public method that initiates the actual directory comparison. You simply call this
+method against the object. Returns 1 if directory comparison succeed otherwise returns 0.
 
    use strict; use warnings;
    use Compare::Directory;
    
    my $directory = Compare::Directory("./got-1", "./exp-1");
    $directory->cmp_directory();
-   
+
 =cut
 
 sub cmp_directory
@@ -218,10 +213,10 @@ Mohammad S Anwar, E<lt>mohammad.anwar@yahoo.comE<gt>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-compare-directory at rt.cpan.org>, 
-or through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Compare-Directory>.  
-I will be notified, and then you'll automatically be notified of progress on your bug 
-as I make changes.
+Please  report  any  bugs or feature requests  to  C<bug-compare-directory at rt.cpan.org>, or
+through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Compare-Directory>.  
+I will be notified, and then you'll automatically be notified of progress on your bug as I make 
+changes.
 
 =head1 SEE ALSO
 
@@ -265,15 +260,16 @@ L<http://search.cpan.org/dist/Compare-Directory/>
 
 Copyright 2010-2011 Mohammad S Anwar.
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
+This  program  is  free software; you can redistribute it and/or modify it under the  terms of 
+either:  the  GNU  General Public License as published by the Free Software Foundation; or the 
+Artistic License.
 
 See http://dev.perl.org/licenses/ for more information.
 
 =head1 DISCLAIMER
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+This  program  is  distributed  in  the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 =cut
 

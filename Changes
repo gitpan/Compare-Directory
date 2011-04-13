@@ -1,5 +1,9 @@
 Revision history for Compare-Directory
 
+1.14    Wed Apr 13 19:19:19 2011
+        - Corrected/Updated pod.
+        - Cosmetics changes to the pod.
+
 1.13    Mon Mar 28 13:14:15 2011
         - Updated Copyright information.
 

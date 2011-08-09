@@ -8,11 +8,11 @@ Compare::Directory - Interface to compare directories.
 
 =head1 VERSION
 
-Version 1.14
+Version 1.15
 
 =cut
 
-our $VERSION = '1.14';
+our $VERSION = '1.15';
 
 use Carp;
 use CAM::PDF;
@@ -35,8 +35,8 @@ the following file types:
     | File Type            | Extension  |
     +-----------------------------------+
     | TEXT File            |   .txt     |
-    | COMMA Seperated File |   .csv     | 
-    | PDF File             |   .pdf     | 
+    | COMMA Seperated File |   .csv     |
+    | PDF File             |   .pdf     |
     | XML File             |   .xml     |
     | EXCEL File           |   .xls     |
     +-----------------------------------+
@@ -47,7 +47,7 @@ The constructor expects the two directories name with complete path.
 
    use strict; use warnings;
    use Compare::Directory;
-   
+
    my $directory = Compare::Directory("./got-1", "./exp-1");
 
 =cut
@@ -75,7 +75,7 @@ sub new
     delete $self->{dir1}->{updir()}  if $self->{dir1}->{updir()};
     delete $self->{dir2}->{curdir()} if $self->{dir2}->{curdir()};
     delete $self->{dir2}->{updir()}  if $self->{dir2}->{updir()};
-    
+
     $self->{_status} = 1;
     map { $self->{entry}->{$_}++ == 0 ? $_ : () } sort(keys(%{$self->{dir1}}), keys(%{$self->{dir2}}));
     $self->{report} = sub 
@@ -85,21 +85,21 @@ sub new
         {
             printf("Only in [%s]: [%s].\n", dirname($a), basename($a));
             $self->{_status} = 0;
-        } elsif (!$a) 
+        } elsif (!$a)
         {
             printf("Only in [%s]: [%s].\n", dirname($b), basename($b));
             $self->{_status} = 0;
-        } 
+        }
         else 
         {
             printf("Files [%s] and [%s] differ.\n", $a, $b);
             $self->{_status} = 0;
         }
     };
-    
+
     bless $self, $class;
     return $self;
-}    
+}
 
 =head1 METHOD
 
@@ -110,7 +110,7 @@ method against the object. Returns 1 if directory comparison succeed otherwise r
 
    use strict; use warnings;
    use Compare::Directory;
-   
+
    my $directory = Compare::Directory("./got-1", "./exp-1");
    $directory->cmp_directory();
 
@@ -149,7 +149,7 @@ sub _cmp_directory($$)
     my $file2 = shift;
     croak("ERROR: Invalid file [$file1].\n") unless(defined($file1) && (-f $file1));
     croak("ERROR: Invalid file [$file2].\n") unless(defined($file2) && (-f $file2));
-    
+
     my $do_FILEs_match = 0;
     if ($file1 =~ /\.txt|\.csv/i)
     {
@@ -175,7 +175,7 @@ sub _cmp_pdf($$)
 {
     my $got = shift;
     my $exp = shift;
-    
+
     unless (blessed($got) && $got->isa('CAM::PDF')) 
     {
         $got = CAM::PDF->new($got) 
@@ -186,7 +186,7 @@ sub _cmp_pdf($$)
         $exp = CAM::PDF->new($exp) 
             || croak("ERROR: Couldn't create CAM::PDF instance with: [$exp]\n");
     }    
-    
+
     return 0 unless ($got->numPages() == $exp->numPages());
 
     my $do_PDFs_match = 0;
@@ -214,7 +214,7 @@ Mohammad S Anwar, E<lt>mohammad.anwar@yahoo.comE<gt>
 =head1 BUGS
 
 Please  report  any  bugs or feature requests  to  C<bug-compare-directory at rt.cpan.org>, or
-through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Compare-Directory>.  
+through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Compare-Directory>.
 I will be notified, and then you'll automatically be notified of progress on your bug as I make 
 changes.
 
@@ -260,15 +260,15 @@ L<http://search.cpan.org/dist/Compare-Directory/>
 
 Copyright 2010-2011 Mohammad S Anwar.
 
-This  program  is  free software; you can redistribute it and/or modify it under the  terms of 
-either:  the  GNU  General Public License as published by the Free Software Foundation; or the 
+This  program  is  free software; you can redistribute it and/or modify it under the  terms of
+either:  the  GNU  General Public License as published by the Free Software Foundation; or the
 Artistic License.
 
 See http://dev.perl.org/licenses/ for more information.
 
 =head1 DISCLAIMER
 
-This  program  is  distributed  in  the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+This  program  is  distributed  in  the hope that it will be useful, but WITHOUT ANY WARRANTY;
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 =cut

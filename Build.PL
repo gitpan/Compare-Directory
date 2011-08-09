@@ -7,16 +7,16 @@ my $builder = Module::Build->new(
     license           => 'perl',
     dist_author       => q{Mohammad S Anwar <mohammad.anwar@yahoo.com>},
     dist_version_from => 'lib/Compare/Directory.pm',
-    add_to_cleanup    => [ 'Compare-Directory-*' ],	
+    add_to_cleanup    => [ 'Compare-Directory-*' ],    
     build_requires    => {
         'Test::More'        => 0,
         'Test::Deep'        => 0,
-        'Readonly'          => 0,
-        'Module::Build'     => 0.36,
-        'Test::Excel'       => 1.11,
-        'CAM::PDF'          => 1.52,
-        'File::Compare'     => 0,
-        'XML::SemanticDiff' => 1.0
+        'Readonly'          => '1.03',
+        'Module::Build'     => '0.36',
+        'Test::Excel'       => '1.11',
+        'CAM::PDF'          => '1.52',
+        'File::Compare'     => '1.1003',
+        'XML::SemanticDiff' => '1.0'
     },
 );
 

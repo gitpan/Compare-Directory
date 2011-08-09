@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 747ee25aedcc0d286896fda4e9183ea60e70497e Build.PL
-SHA1 cf944f4ae03327905d92f6c3582531870127e706 Changes
+SHA1 367b0651fb607971ddab60f05e55bf2a0b524922 Build.PL
+SHA1 0d3e83090b2bc84559bf36b9965688d62c6147be Changes
 SHA1 aa0965bf8236a1957d27040c3e3134a893b5bb79 MANIFEST
 SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 16db5ea005136692e91fe56b299d4beaa1aae5e2 META.yml
-SHA1 16b4ec78bad768872206a181b51969e4db677491 Makefile.PL
+SHA1 2d106d371fa435e1dbb1dd5185848bcca54851d0 META.yml
+SHA1 654c689c01aecb5211f4b3fcea99d36d53ee4bda Makefile.PL
 SHA1 57437afcbba815eb9b21232a7be5ed9e408484a6 README
-SHA1 d90f9a3956169f4ac1f6af12afe0655775754a92 lib/Compare/Directory.pm
+SHA1 6da301685e9f95bbd55b9f517c4d28917356960b lib/Compare/Directory.pm
 SHA1 d95cc8e4f8608ece29cb750333e1688451d92ef8 t/00-load.t
 SHA1 9e0fe177e5fb6a8392e59378319b249ae0557955 t/00-signature.t
 SHA1 b8e74cc0d50022d9fa974c6aea88dcb20245649e t/exp-1/CSV.csv
@@ -40,11 +40,11 @@ SHA1 07094a7c8759a53d2726f15fec83a998638b39eb t/unit-test-01.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2.0.14 (MingW32)
 
-iQEcBAEBAgAGBQJNpelqAAoJEPYcXBXhRYOhWFkH/0JQH/XIAhm03Z2G4u0fAgxQ
-HE2j3GwbAYhNzgTivnnk8zOfSlh7Vh082fzG80IGGgT/AmwkIxG/VtX7pBkEHUJB
-y+DGw1kvXLS4aqfHFbBABP58CureRY3tOsLpPYlTXinwGGt/PB2+sZKa2iDOU/R7
-6rxAtHla1F1a9HLwZpx1M0MMyCR13s31TLUiap8ITUWD7mYGSpuKTmKcc32EPj04
-tS5Yret+oyF6alCOaUayW/LBm/ARPcofp4NP9WSrlE6cdYB9W2gfNjahwl9shZ/v
-hBU3kWKl64PkSwX/IWJWRoo1lKy1Yb6kkGewz1vzGB2pgY+DKLZCdtiQSOdVBQk=
-=jEs5
+iQEcBAEBAgAGBQJOQUp9AAoJEPYcXBXhRYOhYdcH/1QG2BuClQYsLvQqqy4WGvDW
+EYufeDwwEqO8uSItcPl7tJ6NTK/ab+HggNmFCI6/DD4EjMMLgxmZTK2saSs1X6ty
+3mIoPIm1VkMmeE7sB9SXYv7kErOoYmr6joybFaNsCV6wx4yMT36nIIVblzuKt6vj
+ignUZSkp80hCSec0s6RsgD03LVZkpVQodJJLu+cCT10Mvh5S1yBfZEkzvRcKUV8a
+nCdMlaLfzWyvgZ9KoDtVcH+nt1TatNRbG18I5u1nV+GXKCllq/jLDvW22NcKk+OF
+74SR0b5nkcs53N/9heb0azTk1CXVEQ0o1K75gVURBbBsnpxjUzid+/iZb6BJAwY=
+=vKf/
 -----END PGP SIGNATURE-----

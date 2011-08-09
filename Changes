@@ -1,5 +1,9 @@
 Revision history for Compare-Directory
 
+1.15    Tue Aug 09 15:54:11 2011
+        - Made Readonly v1.03 as minimum requirement.
+        - Prepared the distribution using the Module::Signature v0.68.
+
 1.14    Wed Apr 13 19:19:19 2011
         - Corrected/Updated pod.
         - Cosmetics changes to the pod.

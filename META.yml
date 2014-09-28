@@ -16,4 +16,4 @@ no_index:
     - inc
 resources:
   repository: https://github.com/Manwar/Compare-Directory.git
-version: '1.17'
+version: '1.18'

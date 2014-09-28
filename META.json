@@ -1,12 +1,12 @@
 {
-   "abstract" : "unknown",
+   "abstract" : "Interface to compare directories.",
    "author" : [
       "unknown"
    ],
    "dynamic_config" : 1,
    "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.141520",
    "license" : [
-      "unknown"
+      "artistic_2"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -19,31 +19,13 @@
          "inc"
       ]
    },
-   "prereqs" : {
-      "build" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "0"
-         }
-      },
-      "configure" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "0"
-         }
-      },
-      "runtime" : {
-         "requires" : {
-            "CAM::PDF" : "1.52",
-            "File::Compare" : "1.1003",
-            "Module::Build" : "0.36",
-            "Readonly" : "1.03",
-            "Test::Deep" : "0",
-            "Test::Excel" : "1.11",
-            "Test::More" : "0",
-            "Text::PDF" : "0",
-            "XML::SemanticDiff" : "1.0"
-         }
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/Manwar/Compare-Directory.git",
+         "web" : "https://github.com/Manwar/Compare-Directory"
       }
    },
-   "release_status" : "stable",
-   "version" : "1.16"
+   "version" : "1.17"
 }

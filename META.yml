@@ -1,14 +1,11 @@
 ---
-abstract: unknown
+abstract: 'Interface to compare directories.'
 author:
   - unknown
-build_requires:
-  ExtUtils::MakeMaker: '0'
-configure_requires:
-  ExtUtils::MakeMaker: '0'
+build_requires: {}
 dynamic_config: 1
 generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.141520'
-license: unknown
+license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: '1.4'
@@ -17,14 +14,6 @@ no_index:
   directory:
     - t
     - inc
-requires:
-  CAM::PDF: '1.52'
-  File::Compare: '1.1003'
-  Module::Build: '0.36'
-  Readonly: '1.03'
-  Test::Deep: '0'
-  Test::Excel: '1.11'
-  Test::More: '0'
-  Text::PDF: '0'
-  XML::SemanticDiff: '1.0'
-version: '1.16'
+resources:
+  repository: https://github.com/Manwar/Compare-Directory.git
+version: '1.17'

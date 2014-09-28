@@ -8,11 +8,11 @@ Compare::Directory - Interface to compare directories.
 
 =head1 VERSION
 
-Version 1.15
+Version 1.16
 
 =cut
 
-our $VERSION = '1.15';
+our $VERSION = '1.16';
 
 use Carp;
 use CAM::PDF;
@@ -78,10 +78,10 @@ sub new
 
     $self->{_status} = 1;
     map { $self->{entry}->{$_}++ == 0 ? $_ : () } sort(keys(%{$self->{dir1}}), keys(%{$self->{dir2}}));
-    $self->{report} = sub 
+    $self->{report} = sub
     {
         my ($a, $b) = @_;
-        if (!$b) 
+        if (!$b)
         {
             printf("Only in [%s]: [%s].\n", dirname($a), basename($a));
             $self->{_status} = 0;
@@ -90,7 +90,7 @@ sub new
             printf("Only in [%s]: [%s].\n", dirname($b), basename($b));
             $self->{_status} = 0;
         }
-        else 
+        else
         {
             printf("Files [%s] and [%s] differ.\n", $a, $b);
             $self->{_status} = 0;
@@ -124,12 +124,12 @@ sub cmp_directory
         my $f1 = catfile($self->{name1}, $entry);
         my $f2 = catfile($self->{name2}, $entry);
         next if (-d $f1 && -d $f2);
-    
-        if (!$self->{dir1}->{$entry}) 
+
+        if (!$self->{dir1}->{$entry})
         {
             $self->{report}->($f1, undef);
-        } 
-        elsif (!$self->{dir2}->{$entry}) 
+        }
+        elsif (!$self->{dir2}->{$entry})
         {
             $self->{report}->(undef, $f2);
         }
@@ -171,40 +171,40 @@ sub _cmp_directory($$)
     return $do_FILEs_match;
 }
 
-sub _cmp_pdf($$) 
+sub _cmp_pdf($$)
 {
     my $got = shift;
     my $exp = shift;
 
-    unless (blessed($got) && $got->isa('CAM::PDF')) 
+    unless (blessed($got) && $got->isa('CAM::PDF'))
     {
-        $got = CAM::PDF->new($got) 
+        $got = CAM::PDF->new($got)
             || croak("ERROR: Couldn't create CAM::PDF instance with: [$got]\n");
     }
-    unless (blessed($exp) && $exp->isa('CAM::PDF')) 
+    unless (blessed($exp) && $exp->isa('CAM::PDF'))
     {
-        $exp = CAM::PDF->new($exp) 
+        $exp = CAM::PDF->new($exp)
             || croak("ERROR: Couldn't create CAM::PDF instance with: [$exp]\n");
-    }    
+    }
 
     return 0 unless ($got->numPages() == $exp->numPages());
 
     my $do_PDFs_match = 0;
-    foreach my $page_num (1 .. $got->numPages()) 
+    foreach my $page_num (1 .. $got->numPages())
     {
         my $tree1 = $got->getPageContentTree($page_num, "verbose");
         my $tree2 = $exp->getPageContentTree($page_num, "verbose");
-        if (Test::Deep::eq_deeply($tree1->{blocks}, $tree2->{blocks})) 
+        if (Test::Deep::eq_deeply($tree1->{blocks}, $tree2->{blocks}))
         {
             $do_PDFs_match = 1;
         }
-        else 
+        else
         {
-            $do_PDFs_match = 0;            
+            $do_PDFs_match = 0;
             last;
         }
     }
-    return $do_PDFs_match; 
+    return $do_PDFs_match;
 }
 
 =head1 AUTHOR
@@ -215,7 +215,7 @@ Mohammad S Anwar, E<lt>mohammad.anwar@yahoo.comE<gt>
 
 Please  report  any  bugs or feature requests  to  C<bug-compare-directory at rt.cpan.org>, or
 through the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Compare-Directory>.
-I will be notified, and then you'll automatically be notified of progress on your bug as I make 
+I will be notified, and then you'll automatically be notified of progress on your bug as I make
 changes.
 
 =head1 SEE ALSO

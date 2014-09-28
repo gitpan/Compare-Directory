@@ -1,5 +1,10 @@
 Revision history for Compare-Directory
 
+1.16    Sun Sep 28 09:28:33 2014
+        - Removed Build.PL file.
+        - Removed 00-signature.t test script.
+        - Added pre-requisite 'Text::PDF' to Makefile.PL as test were failing.
+
 1.15    Tue Aug 09 15:54:11 2011
         - Made Readonly v1.03 as minimum requirement.
         - Prepared the distribution using the Module::Signature v0.68.
@@ -18,7 +23,7 @@ Revision history for Compare-Directory
         - Updated Build.PL to remove the creation of Makefile.PL on the fly.
         - Added 'clean' key to Makefile.PL.
         - Removed "-T" from the first line of 00-load.t, pod.t, manifest.t,
-          00-signature.t and unit-test-01.t. It appears to me that Mac OS X 
+          00-signature.t and unit-test-01.t. It appears to me that Mac OS X
           doesn't like it, for some reason.
 
 1.10    Tue Mar 01 14:43:35 2011

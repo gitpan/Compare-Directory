@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,37 +14,34 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 367b0651fb607971ddab60f05e55bf2a0b524922 Build.PL
-SHA1 0d3e83090b2bc84559bf36b9965688d62c6147be Changes
-SHA1 aa0965bf8236a1957d27040c3e3134a893b5bb79 MANIFEST
-SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 2d106d371fa435e1dbb1dd5185848bcca54851d0 META.yml
-SHA1 654c689c01aecb5211f4b3fcea99d36d53ee4bda Makefile.PL
+SHA1 71248d10182ae3a7c9675961ddf5467dcc34a704 Changes
+SHA1 8c0ff57077ef6c50d981a90c27c0fb1c3fbc24a0 MANIFEST
+SHA1 5f29cdcbfacb9c46ac155fff9844aceeb064aef1 MANIFEST.SKIP
+SHA1 86303d412dc46b7f540dc6db139981b7938c85cf Makefile.PL
 SHA1 57437afcbba815eb9b21232a7be5ed9e408484a6 README
-SHA1 6da301685e9f95bbd55b9f517c4d28917356960b lib/Compare/Directory.pm
+SHA1 33826bea15b3421af30aadea1e8a913f069221ac lib/Compare/Directory.pm
 SHA1 d95cc8e4f8608ece29cb750333e1688451d92ef8 t/00-load.t
-SHA1 9e0fe177e5fb6a8392e59378319b249ae0557955 t/00-signature.t
-SHA1 b8e74cc0d50022d9fa974c6aea88dcb20245649e t/exp-1/CSV.csv
+SHA1 10268994dd2a92131eea57e6019faca706ee7a59 t/exp-1/CSV.csv
 SHA1 af36c69488895bfe6c347ebd2ea26409c3d1e4ce t/exp-1/PDF.pdf
-SHA1 12f4ecc548413db154b0bc932ee0ca35c20a5c99 t/exp-1/TXT.txt
+SHA1 3aab8c814c8da05be7e957c9aefe42b87841f0c0 t/exp-1/TXT.txt
 SHA1 026840e6cf7fd0ccb5b4a2283447d743614c00ca t/exp-1/XLS.xls
-SHA1 1056adce20e2716c73b5884d49bf64bbbe61d340 t/exp-1/XML.xml
-SHA1 b8e74cc0d50022d9fa974c6aea88dcb20245649e t/got-1/CSV.csv
+SHA1 abc569144ebaff35ba5a615fe4856ce693974f86 t/exp-1/XML.xml
+SHA1 10268994dd2a92131eea57e6019faca706ee7a59 t/got-1/CSV.csv
 SHA1 6f505b1bef3bc8af893e1ff5f04e409cdcf03f53 t/got-1/PDF.pdf
-SHA1 12f4ecc548413db154b0bc932ee0ca35c20a5c99 t/got-1/TXT.txt
+SHA1 3aab8c814c8da05be7e957c9aefe42b87841f0c0 t/got-1/TXT.txt
 SHA1 e931522e611e87aec546c726eb3db6b4e9b28d58 t/got-1/XLS.xls
-SHA1 1056adce20e2716c73b5884d49bf64bbbe61d340 t/got-1/XML.xml
+SHA1 abc569144ebaff35ba5a615fe4856ce693974f86 t/got-1/XML.xml
 SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
 SHA1 0765c9ff0cc4319f415bb08d0053b7717a8284a2 t/pod.t
 SHA1 07094a7c8759a53d2726f15fec83a998638b39eb t/unit-test-01.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v2.0.14 (MingW32)
+Version: GnuPG v1
 
-iQEcBAEBAgAGBQJOQUp9AAoJEPYcXBXhRYOhYdcH/1QG2BuClQYsLvQqqy4WGvDW
-EYufeDwwEqO8uSItcPl7tJ6NTK/ab+HggNmFCI6/DD4EjMMLgxmZTK2saSs1X6ty
-3mIoPIm1VkMmeE7sB9SXYv7kErOoYmr6joybFaNsCV6wx4yMT36nIIVblzuKt6vj
-ignUZSkp80hCSec0s6RsgD03LVZkpVQodJJLu+cCT10Mvh5S1yBfZEkzvRcKUV8a
-nCdMlaLfzWyvgZ9KoDtVcH+nt1TatNRbG18I5u1nV+GXKCllq/jLDvW22NcKk+OF
-74SR0b5nkcs53N/9heb0azTk1CXVEQ0o1K75gVURBbBsnpxjUzid+/iZb6BJAwY=
-=vKf/
+iQEcBAEBAgAGBQJUJ8gRAAoJENoXJXWo7C/p+ecH/3Qqj13QVwsEvevwt43Ec5jd
+RdfiMD2i/QQWbquVJe5xnv+7aEhsvcdbPOkAjXekzCCWWZIj4HSjdt1WZADGvR3Y
+clZp9bdU4ZvNpYQ29hr1LlmISVBKO3rc0+NiOgWcqyDyYTOzB1f8PwHxcoY7gE7P
+snpJRLaWmZ42eWBibz5LPHwAm4eMsep8dj2TrjMr9LDVrjUJ/w9pnbUQlmzvuZTg
+XtuEjiLZkOS/y3GMGtjaLRniVCVSWoX9fbwXCTn8diI+kTJtVDkxHiBbwLoZINva
+2OvfjNChhtBW5u96qIt/X+BWlxuW1lRB6hEAFWpP8D/tBQEIgtucssI280zssws=
+=/1jL
 -----END PGP SIGNATURE-----

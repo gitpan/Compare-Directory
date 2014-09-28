@@ -1,14 +1,11 @@
 MANIFEST
 MANIFEST.SKIP
 Makefile.PL
-Build.PL
 Changes
 SIGNATURE
-META.yml
 README
 lib/Compare/Directory.pm
 t/00-load.t
-t/00-signature.t
 t/manifest.t
 t/pod.t
 t/unit-test-01.t
@@ -22,4 +19,5 @@ t/got-1/PDF.pdf
 t/got-1/TXT.txt
 t/got-1/XLS.xls
 t/got-1/XML.xml
-SIGNATURE    Added here by Module::Build
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)
